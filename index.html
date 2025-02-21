@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Renfe</title>
+    <link rel="icon" type="image" href="./images/renfeFavicon.png">
+</head>
+
+<header style="background: linear-gradient(to right, #ff0066 0%, #6600cc 100%); color: white;">
+    <nav>
+        <ul style="display:inline-flex; justify-content:center;list-style-type:none;">
+            <li style="padding-inline: 30px;">Viajar</li>
+            <li style="padding-inline: 30px;">Experiencias</li>
+            <li style="padding-inline: 30px;">Cercanías</li>
+            <img src="./images/renfe-logo-blanco.png" href="https://www.renfe.com/es/es"alt="renfeLogo" width="100px" height="60px"
+                style="padding-inline: 500px;">
+            <li style="padding-inline: 30px;">Ayuda</li>
+            <li style="padding-inline: 30px;">Grupo Renfe</li>
+            <li style="padding-inline: 30px;">Idioma</li>
+        </ul>
+    </nav>
+</header>
+
+<body style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+    <form action="get" action="./index.html">
+        <fieldset style="border:2px solid purple; display: inline-flex; align-content: space-around;">
+            <legend><b style="color: purple;">Trenes al mejor precio</b> | Renfe Viajes</legend>
+            <div>
+                <label for="origen">Origen</label>
+                <select name="origen" id="origen">
+                    <optgroup label="Estaciones destacadas">
+                        <option value="origen" hidden disabled selected value>Seleccione tu origen</option>
+                        <option value="coruña">A CORUÑA</option>
+                        <option value="alicante">ALICANTE/ALICANT</option>
+                        <option value="barcelona">BARCELONA (TODAS)</option>
+                        <option value="cordoba">CÓRDOBA</option>
+                        <option value="lleidap">LLEIDA-PIRINEUS</option>
+                        <option value="malaga">MÁLAGA MARÍA ZAMBRANO</option>
+                        <option value="madrid">MADRID (TODAS)</option>
+                        <option value="ourense">OURENSE</option>
+                        <option value="santiagocomp">SANTIAGO DE COMPOSTELA</option>
+                        <option value="sevilla">SEVILLA-SANTA JUSTA</option>
+                    </optgroup>
+                </select>
+                &nbsp;
+                <label for="destino">Destino</label>
+                <select name="destino" id="destino">
+                    <optgroup label="Estaciones destacadas">
+                        <option value="destino" hidden disabled selected value>Seleccione tu destino</option>
+                        <option value="coruña">A CORUÑA</option>
+                        <option value="alicante">ALICANTE/ALICANT</option>
+                        <option value="barcelona">BARCELONA (TODAS)</option>
+                        <option value="cordoba">CÓRDOBA</option>
+                        <option value="lleidap">LLEIDA-PIRINEUS</option>
+                        <option value="malaga">MÁLAGA MARÍA ZAMBRANO</option>
+                        <option value="madrid">MADRID (TODAS)</option>
+                        <option value="ourense">OURENSE</option>
+                        <option value="santiagocomp">SANTIAGO DE COMPOSTELA</option>
+                        <option value="sevilla">SEVILLA-SANTA JUSTA</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div style="border-inline: 1px solid grey; margin-inline:10px; padding-inline: 10px;">
+                <label for="fecha_hora">Fecha ida</label>
+                <input type="date" id="fecha" placeholder="Fecha ida">
+                &nbsp;
+                <label for="fecha_hora">Fecha vuelta</label>
+                <input type="date" id="fecha" placeholder="Fecha vuelta">
+            </div>
+            <div>
+                <label for="adultos">Adultos</label>
+                <input type="number" name="adultos" id="adultos">
+                <label for="niños">Niños</label>
+                <input type="number" name="niños" id="niños">
+                <label for="bebes">Bebes</label>
+                <input type="number" name="bebes" id="bebes">
+            </div>
+        </fieldset>
+        <div style="margin-inline:40px;display:flex;align-content:space-around;">
+            <div>
+                <label for="preferencia">
+                    <b>Preferencia de viaje</b><br>
+                    <input type="checkbox" id="preferencia"> Viaje sin enlace
+                </label>
+            </div>
+            <div style="border-inline: 1px solid grey; margin-inline:50px; padding-inline: 50px;">
+                <b>Viaje accesible</b><br>
+                <label for="plaza"><input type="checkbox" id="plaza"> Plaza H disponible</label>
+                <label for="asistencia"><input type="checkbox" id="asistencia"> Necesito asistencia</label>
+
+            </div>
+            <div>
+                <b>Franja horaria</b><br>
+                <div>
+                    <label for="viajeIda"><input type="checkbox" id="viajeIda"> Viaje de ida</label><br>
+                    <label for="viajeIdaTime">Viaje de ida</label>
+                    <input type="time" id="viajeIdaTime">
+                </div>
+                <div>
+                    <label for="viajeVuelta"><input type="checkbox" id="viajeVuelta"> Viaje de vuelta </label><br>
+                    <label for="viajeVueltaTime">Viaje de vuelta</label>
+                    <input type="" id="viajeVueltaTime">
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
